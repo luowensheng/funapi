@@ -1,0 +1,109 @@
+:root {
+    --header-height: 50px;
+    --default-border-radius: 5px;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('Mona-Sans.woff2') format('woff2 supports variations'),
+      url('Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+  
+  html {
+    font-family: 'Mona Sans';
+  }
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.invisible-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+
+.invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.default-button {
+    outline: 1px solid black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: var(--default-border-radius);
+    padding: 10px;
+    min-width: 90px;
+}   
+
+.spacer {
+    flex-grow: 1;
+}
+
+pre {
+    text-align: left;
+}
+
+.styled-input {
+    display: block;
+    flex-grow: 1;
+    padding: 5px;
+    outline: none;
+    overflow-y: scroll;
+    /* min-height: 200px;  */
+
+}
+
+.fill-width {
+    width: 100%;
+}
+
+.fill-height {
+    height: 100%;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
